@@ -27,27 +27,35 @@ Under Construction.
 
 ## 5. How to transfer the slow-motion video from iPhone/iPad to PC
 
+Slow-motion mode can be used with iPhone6 or later, iPad Pro 2017 or later.
+
 **!Caution!  
 There are many situations when Slow-motion-movie files (240 fps) are automatically converted to temporally distorted-video files (30 fps). Such video files cannot be analyzed correctly no longer. The files should keep in the Photos App and take a backup in iCloud or iTunes. It is difficult to restore the data if they have been converted and deleted.**
 
 The following shows how to transfer the files successfully, failed cases and how to check the authenticity.
 
-**Successful**
+**iPhone/iPad settings**
 
-- Case 1: Each file was transfered from the "Photo" folder using Airdrop by the "Share" function of the iPhone App "Documents by Readdle".
+1. Settings → Camera → Format → Select "Most Compatible"
+1. Settings → Photos → Select "Keep Originals" in Transfer to Mac or PC
+
+**Most reliable method**
+
+The most reliable method is the USB transfer method. Connect your iPhone/iPad and Mac with USB and transfer the movie files with the Photo app in Mac. The transferred pictures or movies will be stored at the following path. Confirm that from Terminal.
+
+`Pictures/Photos Library.photoslibrary/Masters/[YYYY]/[MM]/[DD]/`
+
+Reference: http://www.idownloadblog.com/2017/11/22/how-to-shoot-slo-mo-video-1080p-at-240fps-iphone/
+
+**Successful (in the case of iPhone6 only)**
+
+Each file was transfered from the "Photo" folder using Airdrop by the "Share" function or the Wifi by the "Upload" function of the iPhone App "Documents by Readdle".
 
 Readdle's Documents: https://readdle.com/documents
 
-- Case 2: Files were copied to another folder in "Documents by Readdle" and the folder was transfered.  
-**!Caution!  Don't "move" files to another folder. The files were incorrectly converted and the raw files were deleted.**
-
-- Case 3: A batch of files were uploaded to a File Server through the Wifi by the "Upload" function of "Documents by Readdle". This way takes more time than using AirDrop, but it has versatility.
-
 **Failed**
 
-- Case 1: Each file was directly transfered from the Photo App using Airdrop or lightening-USB cable to PC.
-
-- Case 2: Files were moved to another folder in "Documents by Readdle" and the folder was transfered to PC. The files were incorrectly converted and the raw files were deleted.
+File were transfered from the iPhone/iPad's Photo App using Airdrop.
 
 **Checking the authenticity**
 
@@ -140,31 +148,36 @@ Under Construction.
 
 ## 5. iPhone / iPadからスローモーションビデオをPCに転送する方法
 
+iPhone6以降かiPad Proの2017モデル以降でスローモーションビデオを撮影可能です。
+
 **！注意！  
 スローモーションムービーファイル（240fps）が時間軸方向に歪んだビデオファイル（30fps）に自動変換される状況が多く存在します。そのようなビデオファイルに変換されてしまった場合、正しく解析されません。動画ファイルを写真アプリに保管し、iCloudまたはiTunesでバックアップを取っておくことをお勧めします。一度変換されてしまうと、元のデータを復元することは困難です。**
 
 以下に、成功したケースと失敗したケースを示し、最後に、転送されたデータが正しいものであるかをチェックする方法を示します。
 
-**成功したケース**
+**もっとも安全な方法**
 
-- ケース1：ファイルごとにiPhoneアプリ「Documents by Readdle」内の写真フォルダから共有機能を介してAirDropで転送を行なった場合。
+iPhoneまたはiPadとMacをライトニングUSBで接続し、Macの写真Appで動画ファイルを転送します。転送されたファイルは以下のパスに保存されます。
+
+`Pictures/Photos Library.photoslibrary/Masters/[YYYY]/[MM]/[DD]/`
+
+Finderから確認する場合は「ピクチャ」フォルダ内の「写真 Library」で右クリックし「パッケージの内容を表示」を選択します。
+
+Reference: http://www.idownloadblog.com/2017/11/22/how-to-shoot-slo-mo-video-1080p-at-240fps-iphone/
+
+**成功したケース (ただしiPhone6のみ)**
+
+ファイルごとにiPhoneアプリ「Documents by Readdle」内の写真フォルダからAirDropやWifiで転送を行なった場合。
 
 Readdle's Documents: https://readdle.com/documents
 
-- ケース2：「Readles by Documents」を使って、写真フォルダから別のフォルダにファイルを「コピー」し、そのフォルダをAirDropによって転送した場合。  
-**！注意！  ファイルを写真フォルダから別のフォルダに「移動」しないでください。動画は不適切な形式に変換された上、元のデータも失われることがあります。**
-
-- ケース3：「Documents by Readdle」で複数のファイルを選択し、アップロード機能によってWifiを介してファイルサーバーにアップロードした場合。このやり方は、AirDropを使用するよりも時間はかかりますが、汎用性があります。
-
 **失敗したケース**
 
-- ケース1：写真アプリからAirdropまたはlightening-USBケーブル経由でPCに転送された場合。このケースでは写真アプリ内のファイルは削除されないため、やり直しが可能です。
-
-- ケース2：「Readdles by Documents」内の写真フォルダから別のフォルダにファイルを「移動」し、そのフォルダをPCにAirdropで転送したケース。動画は前述の歪んだ動画に変換された上、元のデータも失われ、修復は不可能でした。
+iPhoneまたはiPadの写真アプリからAirdropでPCに転送された場合。
 
 **正しく転送されたかチェックする方法**
 
-`ffmpeg`コマンドを実行したあとに表示されるメッセージ内の、ムービーファイルの情報を確認してください。
+ターミナルで`ffmpeg -i`コマンドを実行したあとに表示されるメッセージ内の、ムービーファイルの情報を確認してください。
 
 正しい場合のメッセージ (`Stream #0:1(und)`の項目が約240 fpsになっています)
 ```
