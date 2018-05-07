@@ -15,7 +15,72 @@ These are softwares for analysis of Arabidopsis thaliana implemented by Python.
 
 ## 2. Developmental environment
 
-Under Construction.
+Our developmental environment is shown in the following:
+
+- MacOS Sierra with Xcode 8.3.3
+- ffmpeg (3.3.4)
+- homebrew (1.3.7)
+- pyenv (1.1.3)
+- Python 3 (3.6.1)
+- Conda (4.3.30)
+- Jupyter notebook (5.0.0)
+- Matplotlib (2.0.2)
+- Numpy (1.13.1)
+- OpenCV-Python (3.3.0.10)
+- Pandas (0.20.3)
+- Scipy (0.19.1)
+- Sqlite (3.13.0)
+- Scikit-learn (0.19.1)
+
+Both AraVib and AraVibS can also be used on other versions and other OSs (Linux and Windows) probably.
+
+For MacOS users, Homebrew, a useful package manager, was installed according to the instruction of the web page. 
+
+URL: https://brew.sh/
+
+Homebrew works as a command brew in Terminal on MacOS. 
+
+`pyenv`, a Python version manager, was installed by the following Terminal command.
+
+```
+$ brew install pyenv
+```
+
+You can find how to install `pyenv` in the GitHub page. 
+
+URL: https://github.com/pyenv/pyenv
+
+`ffmpeg` was installed by the brew command.
+
+```
+$ brew install ffmpeg
+```
+
+For easy installation of Python 3 and its data-science packages, we used the open source Anaconda Distribution. 
+
+URL: https://www.anaconda.com/
+
+We installed Anaconda by `pyenv` command in Terminal.
+
+```
+$ pyenv install anaconda3-4.4.0
+```
+
+Conda, Jupyter notebook, Matplotlib, Numpy, Pandas, Scipy, Sqlite and Scikit-learn are packaged in Anaconda.
+
+To put the Python package installed by the `pip` command directly under Anaconda, the next command was executed.
+
+```
+$ conda install -c anaconda pip
+```
+
+After that we installed OpenCV-Python with `pip` command.
+
+```
+$ pip install opencv-python
+```
+
+URL: https://docs.opencv.org/3.0-beta/index.html
 
 ## 3. How to use AraVib and AraVibS
 
