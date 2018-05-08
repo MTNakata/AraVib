@@ -13,6 +13,8 @@
 
 AraVib is a command-line software implemented by Python to automatically analyze the movies of free vibration of Arabidopsis stems. Please refer to our article (https://www.biorxiv.org/content/early/2018/05/07/315838) on shooting method to analyze by AraVib. In AraVib, the red marker on the black background is tracked, the one-dimensional vibration waveform is drawn from the coordinates of the marker, and damped natural frequency ωd is calculated by Fast Fourier Transform. The output is the csv file of the ωd list and three graphs including the raw vibration waveform. AraVibS is an extended version of AraVib for efficient detection of mutants using data of ωd, which was calculated by AraVib, and growth traits. In addition, the AraVib_model_control program that assists to create a model for mutant detection by AraVibS is also included.
 
+AraVib and AraVibS will be released soon in this page.
+
 ## 2. Developmental environment
 
 Our developmental environment is shown in the following:
