@@ -84,11 +84,11 @@ $ pip install opencv-python
 
 URL: https://docs.opencv.org/3.0-beta/index.html
 
-## 3. How to use AraVib and AraVibS
+## 3. How to use AraVib
 
 Under Construction.
 
-## 4. How to use AraVib and AraVibS
+## 4. How to use AraVibS
 
 Under Construction.
 
