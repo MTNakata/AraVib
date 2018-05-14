@@ -46,7 +46,7 @@ Both AraVib and AraVibS can also be used on other versions and other OSs (Linux 
 
 The details are shown in The AraVib wiki: https://github.com/MTNakata/AraVib/wiki
 
-## 4. Reference
+## 3. Reference
 
 "High-throughput Analysis of Arabidopsis Stem Vibrations to Identify Mutants with Altered Mechanical Properties"  
 Miyuki T Nakata, Masahiro Takahara, Shingo Sakamoto, Kouki Yoshida, Nobutaka Mitsuda  
