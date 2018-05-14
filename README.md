@@ -9,6 +9,8 @@
 
 ## 1. About AraVib & AraVibS
 
+<img src="https://github.com/MTNakata/Image_folder/blob/master/AraVib_logo.png" width="200">
+
 AraVib is a command-line software implemented by Python to automatically analyze the movies of free vibration of Arabidopsis stems. 
 Please refer to our article (see Reference) on shooting method to analyze by AraVib. 
 In AraVib, the red marker on the black background is tracked, the one-dimensional vibration waveform is drawn from the coordinates of the marker, 
