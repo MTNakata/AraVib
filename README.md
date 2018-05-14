@@ -1,5 +1,7 @@
 # AraVib
 
+This software is released under the MIT License, see LICENSE.txt.
+
 ## 0. Topics
 
 1. About AraVib and AraVibS
