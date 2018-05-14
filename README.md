@@ -19,8 +19,6 @@ and three graphs including the raw vibration waveform. AraVibS is an extended ve
 mutants using data of ωd, which was calculated by AraVib, and growth traits. In addition, the AraVib_model_control program that 
 assists to create a model for mutant detection by AraVibS is also included.
 
-AraVib and AraVibS will be released in this page soon.
-
 How to use AraVib and AraVibS will be released on the wiki soon.
 
 ## 2. Developmental environment
