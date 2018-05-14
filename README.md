@@ -4,16 +4,22 @@
 
 1. About AraVib and AraVibS
 1. Developmental environment
-1. How to use AraVib
-1. How to use AraVibS
 1. How to transfer the slow-motion video from iPhone/iPad to PC
 1. Reference
 
 ## 1. About AraVib & AraVibS
 
-AraVib is a command-line software implemented by Python to automatically analyze the movies of free vibration of Arabidopsis stems. Please refer to our article (https://www.biorxiv.org/content/early/2018/05/07/315838) on shooting method to analyze by AraVib. In AraVib, the red marker on the black background is tracked, the one-dimensional vibration waveform is drawn from the coordinates of the marker, and damped natural frequency ωd is calculated by Fast Fourier Transform. The output is the csv file of the ωd list and three graphs including the raw vibration waveform. AraVibS is an extended version of AraVib for efficient detection of mutants using data of ωd, which was calculated by AraVib, and growth traits. In addition, the AraVib_model_control program that assists to create a model for mutant detection by AraVibS is also included.
+AraVib is a command-line software implemented by Python to automatically analyze the movies of free vibration of Arabidopsis stems. 
+Please refer to our article (see Reference) on shooting method to analyze by AraVib. 
+In AraVib, the red marker on the black background is tracked, the one-dimensional vibration waveform is drawn from the coordinates of the marker, 
+and damped natural frequency ωd is calculated by Fast Fourier Transform. The output is the csv file of the ωd list 
+and three graphs including the raw vibration waveform. AraVibS is an extended version of AraVib for efficient detection of 
+mutants using data of ωd, which was calculated by AraVib, and growth traits. In addition, the AraVib_model_control program that 
+assists to create a model for mutant detection by AraVibS is also included.
 
-AraVib and AraVibS will be released soon in this page.
+AraVib and AraVibS will be released in this page soon.
+
+How to use AraVib and AraVibS will be released on the wiki soon.
 
 ## 2. Developmental environment
 
@@ -84,15 +90,7 @@ $ pip install opencv-python
 
 URL: https://docs.opencv.org/3.0-beta/index.html
 
-## 3. How to use AraVib
-
-Under Construction.
-
-## 4. How to use AraVibS
-
-Under Construction.
-
-## 5. How to transfer the slow-motion video from iPhone/iPad to PC
+## 3. How to transfer the slow-motion video from iPhone/iPad to PC
 
 Slow-motion mode can be used with iPhone6 or later, iPad Pro 2017 or later.
 
@@ -182,9 +180,11 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/AraVib/mov/movie_tmp/2018-04-26 14.50.
       displaymatrix: rotation of -90.00 degrees
 ```
 
-## 6. Reference
+## 4. Reference
 
-Under Construction.
+"High-throughput Analysis of Arabidopsis Stem Vibrations to Identify Mutants with Altered Mechanical Properties"  
+Miyuki T Nakata, Masahiro Takahara, Shingo Sakamoto, Kouki Yoshida, Nobutaka Mitsuda  
+doi: https://doi.org/10.1101/315838  
 
 # AraVib (in Japanese)
 
@@ -192,10 +192,7 @@ Under Construction.
 
 1. AraVibとAraVibSとは
 1. 実行環境
-1. AraVibの使い方
-1. AraVibSの使い方
 1. iPhone / iPadからスローモーションビデオをPCに転送する方法
-1. 参考文献
 
 ## 1. AraVib・AraVibSとは
 
@@ -205,15 +202,7 @@ Under Construction.
 
 準備中。
 
-## 3. AraVibの使い方
-
-準備中。
-
-## 4. AraVibSの使い方
-
-準備中。
-
-## 5. iPhone / iPadからスローモーションビデオをPCに転送する方法
+## 3. iPhone / iPadからスローモーションビデオをPCに転送する方法
 
 iPhone6以降かiPad Proの2017モデル以降でスローモーションビデオを撮影可能です。
 
