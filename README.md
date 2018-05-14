@@ -21,7 +21,11 @@ and three graphs including the raw vibration waveform. AraVibS is an extended ve
 mutants using data of ωd, which was calculated by AraVib, and growth traits. In addition, the AraVib_model_control program that 
 assists to create a model for mutant detection by AraVibS is also included.
 
-How to use AraVib and AraVibS will be released on the wiki soon.
+How-to-use-AraVib is found in AraVib wiki: https://github.com/MTNakata/AraVib/wiki/How-to-use-AraVib
+
+How-to-use-AraVibS will be released in the wiki soon.
+
+How-to-transfer-movies is found in AraVib wiki: https://github.com/MTNakata/AraVib/wiki/How-to-transfer-movies-from-iPhone-iPad
 
 ## 2. Developmental environment
 
@@ -44,7 +48,7 @@ Our developmental environment is shown in the following:
 
 Both AraVib and AraVibS can also be used on other versions and other OSs (Linux and Windows) probably.
 
-The details are shown in The AraVib wiki: https://github.com/MTNakata/AraVib/wiki
+The details are shown in AraVib wiki: https://github.com/MTNakata/AraVib/wiki
 
 ## 3. Reference
 
