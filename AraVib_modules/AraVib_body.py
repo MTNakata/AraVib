@@ -68,6 +68,8 @@ def main(i, date_fname, path_list0, df, h, s, v, record = False, db="test"):
     print("ωd of {} = {:.4f} Hz".format(sample_name,*major_freq1))
 
     os.chdir(path_file)
+    plt.scatter(np.array(center_list_raw)[:,0],np.array(center_list_raw)[:,1],cmap="plasma")
+    plt.savefig("{}_{}_coordinates.png".format(date,sample_name),dpi=250)
     plot_graph(displacement_list1)
     plt.savefig("{}_{}_displacement_vibration.png".format(date,sample_name),dpi=250)
     plot_graph(hanning_array1)
