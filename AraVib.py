@@ -1,26 +1,18 @@
 #!/Users/local/.pyenv/versions/anaconda3-4.0.0/bin python3
 # coding: utf-8
-from AraVib_modules.AraVib_video_convert import create_df, create_db, generate_code, video_converter
-from AraVib_modules.AraVib_img_to_vibwave import img_bulk_read_cv2, red_trace_generate, red_trace
-from AraVib_modules.AraVib_img_to_vibwave import img_to_center, nan_processing, center_to_displacement
-from AraVib_modules.AraVib_FFT import displacement_to_difference, transform_hanning, displacement_to_major_freq
+from AraVib_modules.AraVib_video_convert import create_df, create_db
+from AraVib_modules import  AraVib_body
 
-import os, sys, shlex, subprocess, time
+import os
 import sqlite3
 
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-
-from collections import Counter
-from scipy import fftpack
-
-from AraVib_modules import  AraVib_body
         
 def main():
     #threshold of H, S, V
     hue = [5, 165]
-    saturation = 60
+    saturation = 75
     value = 90
     
     #get paths of current directory
@@ -72,7 +64,7 @@ def main():
             conn = sqlite3.connect('vibration.db')
             columns=["date","sample_no","mov_name", "Freq_Hz"]
             df = pd.DataFrame(np.array([[date_fname],["{:03d}".format(i)],[df002["mov_name"][i]],[np.nan]]).T, columns=columns)
-            df.to_sql("vibration{}".format(db_name), conn, if_exists="replace")
+            df.to_sql("vibration{}".format(db_name), conn, if_exists="append")
             conn.close()
             
     #For test: テスト用

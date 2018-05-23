@@ -68,14 +68,15 @@ def main(i, date_fname, path_list0, df, h, s, v, record = False, db="test"):
     print("ωd of {} = {:.4f} Hz".format(sample_name,*major_freq1))
 
     os.chdir(path_file)
-    plt.scatter(np.array(center_list_raw)[:,0],np.array(center_list_raw)[:,1],cmap="plasma")
-    plt.savefig("{}_{}_coordinates.png".format(date,sample_name),dpi=250)
     plot_graph(displacement_list1)
     plt.savefig("{}_{}_displacement_vibration.png".format(date,sample_name),dpi=250)
+    plt.close()
     plot_graph(hanning_array1)
     plt.savefig("{}_{}_hanning_vibration.png".format(date,sample_name),dpi=250)
+    plt.close()
     freqs_power_graph(freqs1, power1, col="k")
     plt.savefig("{}_{}_fft_power_spectrum.png".format(date,sample_name),dpi=250)
+    plt.close()
 
     os.chdir(path_db)
     conn = sqlite3.connect('vibration.db')
