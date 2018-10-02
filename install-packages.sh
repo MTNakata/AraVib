@@ -19,6 +19,4 @@ pyenv local anaconda3-5.2.0
 pip install msgpack
 pip install --upgrade pip
 pip install opencv-python
-pip install jupyterlab
 brew install ffmpeg
-brew install imagemagick

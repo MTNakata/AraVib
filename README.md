@@ -29,15 +29,13 @@ How-to-transfer-movies: https://github.com/MTNakata/AraVib/wiki/How-to-transfer-
 
 ## 2. Developmental environment
 
-Our developmental environment is shown in the following:
+<details><summary>Our developmental environment is shown in the following</summary><div>
 
-- MacOS Sierra with Xcode 8.3.3
 - ffmpeg (3.3.4)
 - homebrew (1.3.7)
 - pyenv (1.1.3)
 - Python 3 (3.6.1)
 - Conda (4.3.30)
-- Jupyter notebook (5.0.0)
 - Matplotlib (2.0.2)
 - Numpy (1.13.1)
 - OpenCV-Python (3.3.0.10)
@@ -46,9 +44,43 @@ Our developmental environment is shown in the following:
 - Sqlite (3.13.0)
 - Scikit-learn (0.19.1)
 
-Both AraVib and AraVibS can also be used on other versions and other OSs (Linux and Windows) probably.
-
 The details on the Mac: https://github.com/MTNakata/AraVib/wiki
+
+</div></details>
+
+<details><summary>Easier installation of packages (Update:2018/10/02)</summary><div>
+
+For MacOSX Sierra or High Sierra, install-packages.sh was added to install packages more easily.
+
+```
+$ git clone https://github.com/MTNakata/AraVib.git
+$ cd AraVib
+$ sh install-packages.sh
+```
+
+Then, installing packages will start. This shellscript includes installation of homebrew, pyenv, Anaconda and ffmpeg.
+
+Please confirm completion of installation by `python` code.
+
+```
+$ python
+Python 3.6.5 |Anaconda, Inc.| (default, Apr 26 2018, 08:42:37) 
+[GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+```
+
+If installation is failed, you see something like the next.
+
+```
+$ python
+Python 2.7.10 (default, Oct  6 2017, 22:29:07) 
+[GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.31)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+```
+
+</div></details>
 
 ## 3. Reference
 
