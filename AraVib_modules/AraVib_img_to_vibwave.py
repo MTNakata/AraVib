@@ -3,7 +3,7 @@ import numpy as np
 
 def img_bulk_read_cv2(path,format=".png"):
     os.chdir(path)
-    all_files = os.listdir(path)
+    all_files = sorted(os.listdir(path))
     file_names = [i for i in all_files if i.endswith(format)]
     png_files = [cv2.imread(i) for i in file_names]
     return file_names, png_files

@@ -8,7 +8,7 @@ from scipy import stats
 def growth_trait_selection():
     local_path = os.getcwd()
     gt_path = local_path + "/mov/growth_trait/"
-    gt_csv_list0 = [i for i in os.listdir(gt_path) if i.endswith(".csv")]
+    gt_csv_list0 = [i for i in sorted(os.listdir(gt_path)) if i.endswith(".csv")]
     gt_csv_dic = {i+1:j for i,j in enumerate(gt_csv_list0)}
     print("\n".join(["{}:{}".format(i,j) for i,j in zip(gt_csv_dic.keys(),gt_csv_dic.values())]))
     
